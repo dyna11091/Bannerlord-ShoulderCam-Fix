@@ -1,0 +1,21 @@
+# Local source build output
+src/**/bin/
+src/**/obj/
+.vs/
+*.user
+*.suo
+
+# Runtime diagnostics
+ShoulderCam.error.log
+ShoulderCam.mcm.error.log
+
+# Local working material
+/备份/
+/报错相关/
+/发布内容/
+/releases/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini

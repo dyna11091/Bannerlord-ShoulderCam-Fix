@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base>
+  <tags>
+    <tag language="English" />
+  </tags>
+  <strings>
+    <string id="shouldercam_display_name" text="Shoulder Camera Mod" />
+    <string id="shouldercam_group_on_foot" text="On Foot Camera" />
+    <string id="shouldercam_group_mounted" text="Mounted Camera" />
+    <string id="shouldercam_group_rotation" text="Rotation and FOV" />
+    <string id="shouldercam_group_modes" text="Mode Behavior" />
+    <string id="shouldercam_group_shake" text="Camera Shake" />
+    <string id="shouldercam_group_advanced" text="Advanced" />
+    <string id="shouldercam_on_foot_x" text="On Foot X Offset" />
+    <string id="shouldercam_on_foot_x_hint" text="Camera offset on the character left/right axis while on foot." />
+    <string id="shouldercam_on_foot_y" text="On Foot Y Offset" />
+    <string id="shouldercam_on_foot_y_hint" text="Camera forward/back distance while on foot." />
+    <string id="shouldercam_on_foot_z" text="On Foot Z Offset" />
+    <string id="shouldercam_on_foot_z_hint" text="Camera height offset while on foot." />
+    <string id="shouldercam_mounted_x" text="Mounted X Offset" />
+    <string id="shouldercam_mounted_x_hint" text="Camera offset on the character left/right axis while mounted." />
+    <string id="shouldercam_mounted_y" text="Mounted Y Offset" />
+    <string id="shouldercam_mounted_y_hint" text="Camera forward/back distance while mounted." />
+    <string id="shouldercam_mounted_z" text="Mounted Z Offset" />
+    <string id="shouldercam_mounted_z_hint" text="Camera height offset while mounted." />
+    <string id="shouldercam_bearing" text="Bearing Offset" />
+    <string id="shouldercam_bearing_hint" text="Yaw offset in radians." />
+    <string id="shouldercam_elevation" text="Elevation Offset" />
+    <string id="shouldercam_elevation_hint" text="Pitch offset in radians." />
+    <string id="shouldercam_third_person_fov" text="Third Person FOV" />
+    <string id="shouldercam_third_person_fov_hint" text="Third-person camera field of view." />
+    <string id="shouldercam_torso_sway" text="Torso Sway Amount" />
+    <string id="shouldercam_torso_sway_hint" text="Camera sway amount from torso tracking." />
+    <string id="shouldercam_ranged_mode" text="Ranged Mode" />
+    <string id="shouldercam_ranged_mode_hint" text="0: no revert, 1: revert only while a ranged weapon is equipped and being aimed, 2: revert while a ranged weapon is equipped." />
+    <string id="shouldercam_aim_return_delay" text="Aim Return Delay" />
+    <string id="shouldercam_aim_return_delay_hint" text="Seconds to keep the vanilla camera after ranged aiming stops." />
+    <string id="shouldercam_mounted_mode" text="Mounted Mode" />
+    <string id="shouldercam_mounted_mode_hint" text="0: no revert, 1: revert while mounted." />
+    <string id="shouldercam_switch_mode" text="Shoulder Switch Mode" />
+    <string id="shouldercam_switch_mode_hint" text="0: no switching, 1: match attack/block direction, 2: temporarily match attack/block direction." />
+    <string id="shouldercam_switch_duration" text="Temporary Switch Duration" />
+    <string id="shouldercam_switch_duration_hint" text="Seconds before the temporary shoulder switch returns to the default shoulder." />
+    <string id="shouldercam_min_player_shake" text="Minimum Player Hit Shake" />
+    <string id="shouldercam_min_player_shake_hint" text="Base shake amount when the player is hit." />
+    <string id="shouldercam_player_shake_mult" text="Player Hit Shake Multiplier" />
+    <string id="shouldercam_player_shake_mult_hint" text="Damage-scaled shake multiplier when the player is hit." />
+    <string id="shouldercam_player_shake_duration" text="Player Hit Shake Duration" />
+    <string id="shouldercam_player_shake_duration_hint" text="Shake duration when the player is hit." />
+    <string id="shouldercam_min_enemy_shake" text="Minimum Enemy Hit Shake" />
+    <string id="shouldercam_min_enemy_shake_hint" text="Base shake amount when the player hits an enemy." />
+    <string id="shouldercam_enemy_shake_mult" text="Enemy Hit Shake Multiplier" />
+    <string id="shouldercam_enemy_shake_mult_hint" text="Damage-scaled shake multiplier when the player hits an enemy." />
+    <string id="shouldercam_enemy_shake_duration" text="Enemy Hit Shake Duration" />
+    <string id="shouldercam_enemy_shake_duration_hint" text="Shake duration when the player hits an enemy." />
+    <string id="shouldercam_max_shake" text="Max Camera Shake" />
+    <string id="shouldercam_max_shake_hint" text="Maximum shake angle in radians." />
+    <string id="shouldercam_live_updates" text="Enable Live Config Updates" />
+    <string id="shouldercam_live_updates_hint" text="Reload config.json while the game is running." />
+  </strings>
+</base>

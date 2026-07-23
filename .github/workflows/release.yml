@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate version
+        shell: pwsh
+        run: |
+          [xml]$module = Get-Content -Raw "ShoulderCam/SubModule.xml"
+          $manifestVersion = $module.Module.Version.value
+          if ($manifestVersion -ne $env:GITHUB_REF_NAME) {
+            throw "Tag $env:GITHUB_REF_NAME does not match SubModule.xml version $manifestVersion."
+          }
+
+      - name: Package module
+        shell: pwsh
+        run: |
+          $archive = "ShoulderCam-$env:GITHUB_REF_NAME.zip"
+          Compress-Archive -Path "ShoulderCam" -DestinationPath $archive
+          "ARCHIVE=$archive" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Create GitHub release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$env:GITHUB_REF_NAME" "$env:ARCHIVE" `
+            --title "Shoulder Cam $env:GITHUB_REF_NAME" `
+            --generate-notes
